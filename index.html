@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/queries.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+    <script defer src="scripts/script.js"></script>
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body>
+    <div class="main__container __grid">
+      <div class="deserts__content">
+        <h1>Desserts</h1>
+        <div class="_desserts"></div>
+      </div>
+      <div class="cart__form">
+        <h2>Your cart (<a class="cart-count">0</a>)</h2>
+        <div class="items hidden">
+          <div class="cart__add"></div>
+          <div class="order_cont">
+            <p class="order_total">Order total</p>
+            <p class="order_price">$<span class="total-order"></span></p>
+          </div>
+          <div class="carbon_cont">
+            <img
+              class="img-carbon"
+              src="/assets/images/icon-carbon-neutral.svg"
+            />
+            <p class="carbon-text">
+              This is a <strong>carbon-neutral</strong> delivery
+            </p>
+          </div>
+          <button class="btn__order">Confirm order</button>
+        </div>
+        <div class="empty">
+          <img
+            class="empty-img"
+            src="/assets/images/illustration-empty-cart.svg"
+          />
+          <p class="empty-text">Your added items will appear here!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="order-confirm hidden">
+      <img src="/assets/images/icon-order-confirmed.svg" class="order-icon" />
+      <h3>Order Confirmed</h3>
+      <p class="order-text">We hope you enjoy your food!</p>
+      <div class="put-data-order">
+        <div class="order-data"></div>
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          "
+        >
+          <p style="font-size: 1.1rem; font-weight: 600; color: #777">
+            Order total
+          </p>
+          <p style="font-size: 1.7rem; font-weight: 700">
+            $<span class="order-total">46.50</span>
+          </p>
+        </div>
+      </div>
+
+      <button class="btn-order">Start new order</button>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
